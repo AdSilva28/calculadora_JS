@@ -1,0 +1,118 @@
+/*Formatação geral para o página*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: white;
+    font-family: poppins;
+   
+}
+
+body {
+    text-align: center;
+    background-color: indigo;
+    display: flex; /*Facilita manipulações das divs*/
+    align-items: center; /*Centraliza verticalmente*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    height: 100vh; /*Faz com que seja ocupado 100% */
+}
+
+#calculadora {
+    color: black;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 15px; 
+    
+}
+
+/*Formatação para o visor da calculadora*/
+#visor {
+    box-sizing: border-box;
+    padding-right: 15px ;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    text-align: right;
+    width: 216px;
+    height: 40px;
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 25px;
+    
+}
+
+ /*Configurações gerais para todos os botões*/
+.botao, .botao_result,.botao_div, .botao_mul, .botao_som, .botao_sub {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin: 2px;
+    
+}
+
+/*Configuação específica para os botões de limpar e delete*/
+.botao {
+    background-color: green;
+}
+.botao:hover {
+    background-color: rgb(40, 211, 40);
+}
+
+/*Configurações específicas para o botão de resultado "="*/
+.botao_result {
+    background-color: grey;
+    color: black;
+}
+.botao_result:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+/*Configurações específicas para os botôes numéricos e vírgula*/
+.botaonum {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    margin: 2px;
+}
+.botaonum:hover {
+    background-color: #bfd0e0;
+}
+
+/* As próximas 4 alerações são para colorir as operações*/
+.botao_div {
+    background-color: #fca80c;;
+}
+.botao_div:hover{
+    background-color: #fcd40c;
+}
+
+.botao_mul {
+    background-color: #8a0a93;
+}
+.botao_mul:hover{
+    background-color: #ba0ac6;
+}
+
+.botao_som {
+    background-color: #be054c;
+}
+.botao_som:hover{
+    background-color: #fc0061;
+}
+
+.botao_sub {
+    background-color: #053ecc;
+}
+.botao_sub:hover{
+    background-color: #0048fe;
+}
+

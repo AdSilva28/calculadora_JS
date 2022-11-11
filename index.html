@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="calculadora">
+
+        <div>
+            <h3 id="nome_calculadora">Calculadora Básica</h3>
+            <p id="visor"></p>
+            <!--- Utilizando tabela para agrupar os botões -->
+            <table id="botoes_calculadora">
+                <tr>
+                    <td><input type="button" value="C" class="botao" onclick="limpar_Tudo()"></td>
+                    <td><input type="button" value="DEL" class="botao" onclick="deletar()"></td>
+                    <td><input type="button" value="/" class="botao_div" onclick="inserir('/')"></td>
+                    <td><input type="button" value="*" class="botao_mul" onclick="inserir('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" class="botaonum" onclick="inserir('7')"></td>
+                    <td><input type="button" value="8" class="botaonum" onclick="inserir('8')"></td>
+                    <td><input type="button" value="9" class="botaonum" onclick="inserir('9')"></td>
+                    <td><input type="button" value="+" class="botao_som" onclick="inserir('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" class="botaonum" onclick="inserir('4')"></td>
+                    <td><input type="button" value="5" class="botaonum" onclick="inserir('5')"></td>
+                    <td><input type="button" value="6" class="botaonum" onclick="inserir('6')"></td>
+                    <td><input type="button" value="-" class="botao_sub" onclick="inserir('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" class="botaonum" onclick="inserir('1')"></td>
+                    <td><input type="button" value="2" class="botaonum" onclick="inserir('2')"></td>
+                    <td><input type="button" value="3" class="botaonum" onclick="inserir('3')"></td>
+                    <td rowspan="2"><input type="button" value="=" class="botao_result" style="height: 106px;" onclick="calcular()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="0" class="botaonum" style="width: 106px;" onclick="inserir('0')"></td>
+                    <td><input type="button" value="." class="botaonum" onclick="inserir('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script..js"></script>
+</body>
+
+</html>
